@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>SmartHome Store — Умные устройства для дома</title>
+    <meta name="description" content="Интернет-магазин умных устройств для дома: лампы, розетки, камеры, пылесосы и кухня. Доставка по РФ. Поддержка 24/7.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <div class="logo-img">SH</div>
+                    <div class="logo">SmartHome Store</div>
+                </div>
+                <div class="contact-info">
+                    <p>📞 8 (999) 123-45-67</p>
+                    <p>✉️ shop@smarthome.example</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            <ul>
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="categories.html" class="nav-link">Категории</a></li>
+                <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="categories.html" class="nav-link">Категории</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a>
+            <span class="separator">/</span>
+            <span class="current">Магазин</span>
+        </div>
+    </div>
+
+    <section id="home" class="banner">
+        <div class="container">
+            <h1>Умный дом — просто и доступно</h1>
+            <p>Освещение, безопасность, уборка и кухня — соберите идеальный комплект для вашего дома с доставкой завтра.</p>
+            <div class="cta-buttons">
+                <a href="catalog.html" class="btn">Смотреть каталог</a>
+                <a href="contacts.html" class="btn btn-secondary">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <section id="about" class="about-section">
+                    <h2>О магазине SmartHome Store</h2>
+                    <p><strong>SmartHome Store</strong> — это интернет-магазин умных устройств с быстрой доставкой и поддержкой 24/7. Мы поможем собрать комплект под ваш дом: от ламп и розеток до камер и роботов-пылесосов.</p>
+                    <ul class="about-points">
+                        <li>🚚 Доставка по РФ за 1–3 дня</li>
+                        <li>🛡️ Гарантия 2 года на все товары</li>
+                        <li>💳 Рассрочка 0% до 12 мес.</li>
+                        <li>📞 Помощь в настройке</li>
+                    </ul>
+                </section>
+
+                <section id="categories" class="services-section">
+                    <h2>Категории товаров</h2>
+                    <div class="services-grid">
+                        <div class="service-card"><h3>💡 Освещение</h3><p>RGB лампы, ленты, сценарии.</p></div>
+                        <div class="service-card"><h3>🔌 Розетки</h3><p>Управление мощностью и расписания.</p></div>
+                        <div class="service-card"><h3>📹 Безопасность</h3><p>Камеры, датчики движения и двери.</p></div>
+                        <div class="service-card"><h3>🤖 Уборка</h3><p>Роботы‑пылесосы и станции.</p></div>
+                    </div>
+                </section>
+
+                <section id="products" class="products-section">
+                    <h2>Популярные товары</h2>
+                    <div class="products-grid">
+                        <!-- Рендерится скриптом -->
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="question-section">
+                    <h2>Подберем комплект под ваш дом</h2>
+                    <p class="muted">Оставьте контакты, и мы бесплатно составим подборку под ваш бюджет.</p>
+                    <form class="question-form" id="questionForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <select>
+                            <option value="">Выберите категорию</option>
+                            <option value="lighting">Освещение</option>
+                            <option value="sockets">Розетки</option>
+                            <option value="security">Безопасность</option>
+                            <option value="cleaning">Уборка</option>
+                        </select>
+                        <textarea placeholder="Опишите задачи и бюджет..."></textarea>
+                        <button type="submit" class="btn">Получить подборку</button>
+                    </form>
+                </section>
+
+                <section class="faq-section">
+                    <h2>FAQ</h2>
+                    <div class="faq-item">
+                        <h3>Можно подключить Алису/Гугл/Сири?</h3>
+                        <p>Да, большинство устройств поддерживают голосовых ассистентов и сценарии.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Есть установка и настройка?</h3>
+                        <p>Да, наши специалисты помогут все подключить и обучат использованию.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>SmartHome Store</h3>
+                    <p>Умные технологии — умная жизнь</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#categories">Категории</a></li>
+                        <li><a href="#products">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>📞 8 (999) 123-45-67</p>
+                    <p>✉️ <a href="mailto:shop@smarthome.example" rel="nofollow">shop@smarthome.example</a></p>
+                    <p>📍 Москва</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 SmartHome Store. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
